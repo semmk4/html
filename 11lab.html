@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>MathML and SVG</title>
+
+    <script type="text/javascript" async
+
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+
+        </script>
+
+</head>
+<body>
+    <math>
+        <mrow> 
+            <mrow>  
+                <msup>  
+                    <mi>a</mi>  
+                    <mn>2</mn>  
+                 </msup> 
+               <mo>+</mo>  
+               <msup>  
+                <mi>b</mi>  
+                <mn>2</mn>  
+             </msup> 
+            </mrow>
+            <mo>=</mo>  
+            <msup>  
+                <mi>c</mi>  
+                <mn>2</mn>  
+             </msup>  
+         </mrow>
+    </math>
+    <br>
+    <br>
+    <math>
+        <mrow>
+            <mi>&#x0393;</mi> 
+            <mn>(z)</mn>
+            <mo>=</mo>
+            <msubsup>
+                <mo> ∫</mo>
+                <mn> 0 </mn>
+                <mi>&#x221e</mi> 
+             </msubsup>
+             <msup>  
+                <mi>t</mi>  
+                <mrow>   
+                   <mi>z</mi>  
+                   <mo>-</mo>  
+                   <mn>1</mn>  
+                </mrow>   
+             </msup>
+             <mi>d</mi>
+             <mi>t</mi>  
+             <mo>=</mo> 
+             <mfrac linethickness = '1px'>
+                <msup>  
+                    <mi>e</mi> 
+                <mrow>
+                    <mo>-</mo>
+                    <mi>y</mi>
+                    <mi>z</mi>
+                </mrow>  
+                 </msup>
+                <mrow>
+                    <mi>z</mi>
+                </mrow>
+             </mfrac>
+             <munderover>
+                <mi>&prod;</mi>
+                <mrow>
+                <mi>k</mi>
+                <mo>=</mo>
+                <mn>1</mn>
+                </mrow>
+                <mi>&#x221e</mi> 
+             </munderover>
+             <msup>
+                <mrow>
+                <mo>(</mo>
+             <mn>1</mn>
+             <mo>+</mo>
+             <mfrac>
+                <mi>z</mi>
+                <mi>k</mi>
+             </mfrac>
+             <mo>)</mo>
+                </mrow>
+                <mrow>
+                    <mo>-</mo>
+                    <mn>1</mn>
+                </mrow>
+             </msup>
+             <msup>
+                <mi>e</mi>
+                <mrow>
+                <mi>z</mi>
+                <mo>/</mo>
+                <mi>k</mi>
+                </mrow>
+             </msup>
+        </mrow>
+    </math>
+    <br>
+    <br>
+    <br>
+    <br>
+    <svg width="200" height="250">
+        <!-- Oval stretched on the y-axis -->
+        <ellipse cx="100" cy="100" rx="50" ry="80" style="fill: #ffffff; stroke: #000; stroke-width: 4;"/>
+     
+        <!-- Horizontal line through the middle -->
+        <line x1="30" y1="100" x2="170" y2="100" style="stroke: #000; stroke-width: 4;"/>
+      
+        <!-- Vertical line at the bottom of the oval -->
+        <line x1="100" y1="180" x2="100" y2="210" style="stroke: #000; stroke-width: 4;"/>
+      
+        <!-- Horizontal line at the bottom of the vertical line -->
+        <line x1="70" y1="210" x2="130" y2="210" style="stroke: #000; stroke-width: 4;"/>
+      </svg>
+</body>
