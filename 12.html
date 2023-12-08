@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paskutinis.css">
+    <title>Vartotojo Informacija</title>
+</head>
+<body>
+    <h1>Įrašykite duomenis</h1>
+    <form id="userInfoForm">
+        <label for="firstName" id = "label">Vardas:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+
+        <label for="lastName" id = "label">Pavardė:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+
+        <label for="number1" id = "label">Dviženklis skaičius:</label>
+        <input type="number" id="number" name="number" min="10" max="99" required><br>
+
+        <button type="button" onclick="storeData()">Atlikti programinę magiją</button>
+    </form>
+
+    <div id="resultContainer"></div>
+
+    <script src="12.js"></script>
+</body>
+</html>
